@@ -1,0 +1,46 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry} 
+\usepackage{amsmath,amsthm,amssymb,amsfonts}
+\usepackage{listings}
+\usepackage{graphicx}
+\usepackage{lipsum,calc}
+\usepackage[shortlabels]{enumitem}
+ 
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+
+\newenvironment{problem}[2][Problem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+
+\begin{document}
+\title{CSE 574 Homework 3}
+\author{Zackary Crosley}
+\maketitle
+
+\begin{problem}{1} Markov Decision Processes: Consider the world shown in the figure. Assume that 80\% of the time the agent moves in its intended direction and 10\% of the time it moves in each of the two right angles to that direction. Implement value iteration for each r value below. Discount rewards with a discount factor 0.99. Show the policy obtained in each case and explain why that policy was the intuitive output.
+\begin{enumerate}
+	\item r = 100
+	\item r = -3
+	\item r = 0
+	\item r = 3
+\end{enumerate}
+\end{problem}
+\begin{problem}{2} Value Iteration: For the zero-sum, turn-taking game in Homework 2, let R(s) be the reward for A in state s. Let -R(s) be the reward for B with A in state s. Let $U_A (s)$ be the utility of state s when it's A's turn to move in s, and $U_B (s)$ the same for B.
+\begin{enumerate}
+	\item Write down Bellman equations defining $U_A (s)$ and $U_B (s)$.
+	\item Explain how to do two player value iteration with these conditions and define suitable termination criteria.
+	\item Draw the state space showing moves by A in solid lines and moves by B in dashed lines. Mark each state with R(s). Arrange states sA sB on a grid, using sA and sB as coordinates.
+	\item Apply two-player value iteration to solve the game, and derive the optimal policy.
+\end{enumerate}
+\end{problem}
+\begin{problem}{3}
+\end{problem}
+\begin{problem}{4}
+\end{problem}
+\begin{problem}{5}
+\end{problem}
+\begin{problem}{6} 
+\end{problem}
+\begin{problem}{7}
+\end{problem}
+\end{document}
