@@ -1,0 +1,1 @@
+For value iteration - Just go out one iteration and use that value. This strategy is usually used on problems which converge, but the examples in class may not since they are for education purposes. Using v*(s') = value(s') without recursing further is sufficient for class. The program output incorrect results as the calculation was incorrectly implemented.
