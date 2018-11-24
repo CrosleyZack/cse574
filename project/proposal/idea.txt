@@ -1,0 +1,3 @@
+A generalization of the markov decision process is a stochastic game, with multiple players all with independent states, actions, reward functions, and transitions.
+
+Can the FRMDP I created be generalized to use a set of states, actions, and transitions, one for each player? Additionally, the reward function must be independent for each player (though it may be constant, it isn't in the general case). Can python generate function calls on the fly by player id which will be defined by the developer? Can a function be implemented which allows a single function to be efficiently mapped to multiple users?

@@ -50,7 +50,6 @@ class FRMDP(object):
         # h in paper.
         self.horizon = horizon
 
-
     def is_terminal(self, state):
         """
         Checks if MDP is in terminal state.
@@ -58,7 +57,6 @@ class FRMDP(object):
         :return True if the state is terminal, False otherwise.
         """
         raise NotImplementedError()
-
 
     def get_probs(self, state, action):
         """
@@ -68,9 +66,7 @@ class FRMDP(object):
         :return the vector  of probabilities for each next state given an action and state, or a matrix of probabilities for each action.
         :rtype ndarray.
         """
-        probs = self.t[state][action][:]
-        return probs
-
+        return self.t[state][action][:]
 
     def get_reward(self, state, action, state_reward):
         """
@@ -82,7 +78,6 @@ class FRMDP(object):
         """
         raise NotImplementedError()
 
-
     def termination_reward(self, state):
         """
         Checks if MDP is in terminal state.
@@ -90,7 +85,6 @@ class FRMDP(object):
         :return termination reward for this state.
         """
         return self.g[state]
-    
 
     def take_action(self, state, action):
         """
@@ -125,9 +119,8 @@ class FRMDP(object):
                     continue
                 # get value for each action in state.
                 for a, action in enumerate(self.a):
-                    val = np.dot(self.get_probs(s, a),
-                                 self.get_reward(s, a, delta[t - 1]))
-                    options[s][a] = val
+                    options[s][a] = np.dot(self.get_probs(s, a),
+                                           self.get_reward(s, a, delta[t - 1]))
                 # set optimal policy and value.
                 policy[s] = np.argmax(options[s])
                 delta[t][s] = options[s][policy[s]]

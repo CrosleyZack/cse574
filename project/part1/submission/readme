@@ -1,0 +1,5 @@
+To run the code, use Python 3 with numpy library version 1.15.2. This code was originally developed with Python 3.7.0 using this same version of numpy. No other dependencies are required.
+
+To run the code, simply type "python3 frmdp.py" from the same directory as the file.
+
+Executing the code will run value iteration over both the FRMDP and MDP problems specified in the paper submission, check that the values are correct, and print out the optimal policies derived for each. More in depth information on the exact values calculated for each state-action can be found in the paper, where a graph was made for each.

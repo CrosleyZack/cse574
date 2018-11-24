@@ -1,0 +1,11 @@
+Literature Review Notes:
+1. Markov Decision Processes with Functional Rewards:
+	- Develops a generic framework for markov decision projects with non-scalar reward schemes.
+	- Necessary for a problem of this complexity.
+2. Emerging Issues in Responsible Vulnerability Disclosure.
+	- Discusses the strategies for disclosing known vulnerabilities taking into account the costs, both to repair and reputation costs from disclosing publicly.
+3. Would a 'Cyber Warrior' Protect Us? Exploring Trade-offs Between Attack and Defense of Information Systems.
+	- Finds that a stable, defensive equilibrium is not possible in cyber warfare and one party will always be incentivized to attack.
+	- Indicates a necessity for researching an exploitation strategy.
+4. How Shall We Play a Game?
+	- Using new strategies finds that all vulnerabilities are disclosed only if full exploit reflection is possible.

@@ -1,0 +1,9 @@
+1. D. P. Duggan and R. C. Parks, "Principles of Cyberwarfare," in IEEE Security & Privacy, vol. 9, no. , pp. 30-35, 2011. doi:10.1109/MSP.2011.138
+2. D. Elliott, "Deterring Strategic Cyberattack," in IEEE Security & Privacy, vol. 9, no. 5, pp. 36-40, Sept.-Oct. 2011.
+doi: 10.1109/MSP.2011.24
+3. Lye, K. & Wing, J. IJIS (2005) 4: 71. https://doi.org/10.1007/s10207-004-0060-x
+4. Moore, Tyler et al. “Would a 'cyber warrior' protect us: exploring trade-offs between attack and defense of information systems.” NSPW (2010).
+5. Nong Ye, Yebin Zhang and C. M. Borror, "Robustness of the Markov-chain model for cyber-attack detection," in IEEE Transactions on Reliability, vol. 53, no. 1, pp. 116-123, March 2004. doi: 10.1109/TR.2004.823851
+6. S. Roy, C. Ellis, S. Shiva, D. Dasgupta, V. Shandilya and Q. Wu, "A Survey of Game Theory as Applied to Network Security," 2010 43rd Hawaii International Conference on System Sciences, Honolulu, HI, 2010, pp. 1-10. doi: 10.1109/HICSS.2010.35
+7. Spanjaard O., Weng P. (2013) Markov Decision Processes with Functional Rewards. In: Ramanna S., Lingras P., Sombattheera C., Krishna A. (eds) Multi-disciplinary Trends in Artificial Intelligence. MIWAI 2013. Lecture Notes in Computer Science, vol 8271. Springer, Berlin, Heidelberg
+8. T. Bao, Y. Shoshitaishvili, R. Wang, C. Kruegel, G. Vigna and D. Brumley, "How Shall We Play a Game?: A Game-theoretical Model for Cyber-warfare Games," 2017 IEEE 30th Computer Security Foundations Symposium (CSF), Santa Barbara, CA, 2017, pp. 7-21. doi: 10.1109/CSF.2017.34

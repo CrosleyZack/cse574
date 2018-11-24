@@ -1,0 +1,70 @@
+Principles of Cyberwarfar.
+           - The principles of kinetic warfare have been written about for millenia, arguably starting with Sun Tzu's The Art of War. The principles define heuristics of how attacks should be run, weapons be used, objectives prioritized, etc. The main goal of the principles is to understand how kinetic war will be fought. This article attempts to pin down the equivalent principles for cyber warfare.
+          - Principle 1 - Lack of physical limitations. Cyber warfare differs in the lack of distance / space limitations, lack of cost limitations for creating weapons.
+          - Principle 2 - Kinetic Effects. Cyber ware must have kinetic world effects to be effective. This includes damaging or controlling infrastructure, manipulating information to change real-world decisions, etc.
+          - Principle 3 - Stealth. It is far easier to hide in the cyber world if nobody is looking. All intrusions and attacks leave traces, if someone looks in the right places. To a proper defense, an attack must look like normal traffic in order to be unseen.
+          - Principle 4 - Mutability and Inconsistency. Cyberspace is chaotic and constantly changing. Behavior changes dynamically based on slight changes in the system, like the butterfly effect. Software works less consistently than most physical hardware, resulting in less certainty a phase in an attack will operate as expected.
+          - Principle 5 - Identity and Priveleges. Impersonation of high ranking individuals is possible and one ofthe most effective attacks. Getting higher system privileges is key to many attacks.
+          - Principle 6 - Dual use. Most kinetic weapons are built for a single function, but computers are inherently multi use items. Attackers and defenders use the same tools and systems for offensive and defensive purposes. In cyber space we attack ourselves to test our defenses, which is not common in the real world due to cost and damage risks.
+          - Principle 7 - Infrastructure Control. In the physical world military tends to control all of the infrastructure they utilize. In cyber space, 90% of military infrastructure is owned by a third party. This opens up more uncertainty about the security of communications and services.
+          - Principle 8 - Information as Operational Environment. In cyber space, the operational environment information is the information itself - the other traffic in the system. There is no need for sensors to turn physical reality into data; everything is already data.
+
+
+Deterring Strategic Cyberattack.
+          - Compares and contrasts effective cyber strategies to US nuclear strategies.
+          - Nuclear attacks will almost inevitably have known origin, where as cyber attack sources may be obfuscated far more effectively.
+          - Nuclear attacks have known response threat (US if attacked would retaliate on target with devastating force), however cyber attack retaliation is assumed but the reponses nature is unknown. Retaliation undertaken may not use all resources to maintain unknown capabilities and prevent collateral damage.
+          - There are no public details outlining US response to cyber attacks, unlike nuclear (This may have changed).
+          - Defense against nuclear attack has never been a real deterrent (no system is reliable enough to prevent massive damage), whereas in cyber security this is possible.
+          - There are no laws limiting the creation or use of cyber weapons, partially because it is harder to determine source (see 1) and partially because it would be hard to detect cyber weapon development (no large facotries).
+
+
+Would a 'Cyber Warrior' Protect Us? ...
+      - Presents a model for cyber warfare analyzing nations policies over attacking, defending, or stockpiling arms.
+      - Trade-off between attack and defense - exploiting a vulnerability requires not disclosing it. This means civilian systems will be vulnerable, subject to attack by enemies using the same vulnerability used on them, often as a form of reflection.
+                  - Game with possible actions Defend (use virus to patch) and Stockpile. If both players are unlikely to find the vulnerability, they both stockpile. If another player is more likely to have found the vulnerability first, then defend. If both are likely to find it, both defend.
+       - Cyber Hawk - Attack immediately or Defend. Always someones best interest to attack. If both are equally technically capable, both attack. An actor only defends if the odds of finding the vulnerability itself were low and the other player is likely to attack. Ideal balance is where both parties think the other has superiority, thus making defence seem optimal for both.
+
+
+
+How Shall We Play A Game.
+          - Models cyber warfare decisions as a zero-sum partially observable stochastic game, including disclosing and patching a vulnerability, exploiting a vulnerability for reward, stashing a vulnerability, and do nothing. It also considers the implications of  exploit reflection on the decisions.
+                   - Assumes patching requires disclosing the exploit (patches usually require public software updates), players can detect and reverse attacks, and knowing a vulnerability through patch or finding a zero day implies knowledge of how to exploit it.
+                   - Partially observable stochastic game with 2 players, state = (Round #, Round patch is release, state of player 1, state of player 2). State of a player is either D => Zero Day known or ~D => No Zero Day Known. Action set of player in D is patch, exploit, stash or nothing. Action of player in ~D is nothing. Transitions are stochastic based on player states and action. These transitions sort states into five categories: Neither has discoverd a vulnerability, one has discovered and the other hasn't, both have discovered a vulnerability and nobody has disclosed it, both have discoverd a vulnerability and it has been disclosed, and one player discloses a vulnerability and the other player hasn't yet discovered it. Reward is calculated from both players actions, with separate utilities gained from patching and attacking.
+                    - SKIPPED 7 - 12
+                    - Found there are several previously undocumented ideal strategies, including situations where both players disclose, a player discloses then attacks, and other combinations. Using their derived strategy would have altered the outcome of the Cyber Grand Challenge competition.
+                    - also found that as the reflection risk went up, such as the deployment of automatic reflection systems, the probability of disclosing a vulnerability went up.
+
+
+A Survey of Game Theory as Applied to Network Security.
+         - Describes the various types of games in Game Theory and presented ways in which each had been applied to network security.
+         - Complete, Imperfect information Static Game. Used in previous papers for risk assessment and information warfare equilibriums.
+         - Incomplete, Imperfect Information Static Games. Model DDOS attack and defense, intrusion detection.
+         - Complete, Perfect Information Dynamic Game. See "Game Strategies in Network Security" paper above.
+         - complete, Imperfect Information Dynamic Game. Network security as sequence of games where perfect observations of opponents moves are impossible.
+         - Incomplete, Perfect Information. Modeled worm propogation where attacker tries to maximize the minimum propogation speed of the worm and defender tries to minimize the maximum propogation speed. This is a zero-sum game and can be solved via min-max.
+         - Incomplete, Imperfect Information Dynamic Game. Includes papers calculating the nash equilibrium for an attacker - defender network scenario across several possible attack vectors.
+
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Robustness of the Markov-chain Model for Cyber-Attack Detection.
+           - Models intrusion using a Markov chain.
+                    - Modeled network-based exploits given the audit events. 284 possible audit events the 284 possible states and a window of size N allowing the chain to consider this observation plus the previous N - 1. The model is trained on 1613 audit events from MIT Lincoln Laboratory, with probabilities indicating the likelihood of a sequence of events occuring. Due to the small size of the training data and the number of possible combinations for events, it is assumed that any event not seen during training is not impossible (probability 0) but of a low probability. Given pure data, the markov chain performed well at detecting malicious networking activity. However, the markov chain did poorly in environments with noisy data, as may be common for many real world servers.
+
+
+
+Game Strategies in Network Security.
+          - Constructs general-sum stochastic game between network attacker and network defender.
+          - Unlike Tiffany's paper, the model for reward is not equal and opposite (zero sum). An attacker could gain more than the defender loses or, more likely, the defender can lose more than the attacker gains.
+          - Two player game. Assumes multiple attackers would be independent, thus one game is sufficient.
+          - Modeled as infinite horizon game.
+          - State modeled as graph of network, with defending nodes including a web server W, a file server F, and a workstation N. The attacker (WWW, external devices) are all modeled as a single node E. E connects to W; W, F and N are all interconnected. Therefore state is modled as state of the three in-network devices and the traffic state T. Each in-network device has state consisting of software applications on node, whether the user has been compromised, and whether the data has been compromised. T is equal to the % of maximum traffic flow across each edge. Attacker has multiple attack actions, such as installing a sniffer or shutting down network. Admin has various actions to remove malware and secure devices.
+          - Run on several scenarios, including defacing website, DOS attack, and sniffing traffic.
+          - Found that the attacker causes maximum damage, taking into account risk of being caught, depreciated future rewards, etc. simply defacing website (combined reputation losses, near guaranteed success). Administrator should immediately remove attacker rather than trying to play with him/her hoping they will reveal some information (ip, etc).
+
+
+
+Functional MDP!
