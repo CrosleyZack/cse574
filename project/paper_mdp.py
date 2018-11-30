@@ -1,5 +1,5 @@
 import numpy as np
-from mdp import MDP
+from old_mdp import MDP
 from util import generate_transition
 
 class Paper_MDP(MDP):
