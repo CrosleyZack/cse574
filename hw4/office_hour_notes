@@ -1,0 +1,10 @@
+CSE 575 Office Hour Notes:
+
+Problem 5:
+Look at "Hidden State Sequences", related to verterbi algorithm.
+Computed joint probability in class on Wednesday.
+Conditional probability H is the observation given the last observation was H?
+"Probability of a (hidden state sequence u) given a set of observation."
+In class we found deltas using equations from verterbi, as part of that we needed to find conditional probability.
+Bottom Line: Look at verterbi algorithm! Essentially we are filling out the trellis diagram.
+Time sequence for hidden markov model is out to time 4 since our series of observations is length 4.
