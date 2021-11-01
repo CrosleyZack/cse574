@@ -1,0 +1,1 @@
+This homework assignment was a review of topics essential to Artificial Intelligence, particularly Markov Chains. This included conditional probability, probability distributions, time complexity, linear algebra, and tree searches.
