@@ -1,0 +1,1 @@
+This assignment included Markov Chains, Markov Decision Processes, Bellman Equations, Dynamic Programming, and policy iteration.
