@@ -1,0 +1,1 @@
+This assignment covered various state space search methods, including A* search, admissable heuristic functions, constraint satisfaction problems, alpha-beta pruning, and adversarial searches.
