@@ -1,0 +1,9 @@
+* Description
+Class required a implementation of an individual research project. Project had to implement and extend a published paper and perform a novel application of AI methods learned in the course.
+
+* Project
+
+For this project, I wanted to implement something that applied Artificial Intelligence to software security. I read multiple papers (see the "Used and Read" directory) to investigate how Markov Modeling had been used in the past for security applications. I found that most used pretty basic MDPs. I was inspired by a paper published by Tiffany Bao, a professor at SEFCOM, which did a Game Theory analysis on optimal strategies for cyber warfare / capture the flag scenarios based on experiences as DARPA's Cyber Grand Challenge (See bao2017csf.pdf in "Used and Read"). My thesis research was also in the area of CTF automation, and so I wanted to attempt to learn optimal strategy for CTFs. I simplified the action state into using an exploit, patching an exploit, developing exploits, and doing nothing. Assuming that resources were limited and only one action can be performed at a timestep, what is the optimal way at which one could play a CTF? Exploits were modeled to have diminishing returns as other teams learned and patched the exploits, while patching an exploit gave less information to opponents on the vulnerability but did provide some, reducing opponents potential gains.
+
+* Paper
+For this project I implemented Function Reward Markov Decision Process by Spanjaard and Weng (See miwai2013-1.pdf in "Used and Read"). This abstracted the cost function of a Markov Decision Process into a function argument, allowing for a very generic methodology for implementing MDPs. I have a soft spot for very abstract, reusable code, and my project concept only required a basic MDP for start. This paper then allowed me both to develop my project and create a generic MDP process for use in future projects.
